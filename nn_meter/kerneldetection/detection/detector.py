@@ -20,7 +20,7 @@ class KernelDetector:
         new_graph = convert_nodes(graph)
         self.model_graph = ModelGraph(graph=new_graph)
         self.model_graph.refresh()
-        self.bbs = self.splitter.split(self.model_graph)
+        # self.bbs = self.splitter.split(self.model_graph)
 
     @property
     def kernels(self):
